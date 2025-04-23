@@ -7,94 +7,89 @@
   <link rel="stylesheet" href="styleProjects.css" />
 </head>
 <body>
-  <header>
-  <nav class="nav-container">
-    <a href="../index.html" class="nav-logo">
-      <img src="../images/profile-pic.jpeg" alt="Jalen Broxie" />
-    </a>
-    <div class="hamburger" onclick="toggleMenu()">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <ul class="nav-links">
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="Resume.html">Resume</a></li>
-      <li><a href="About.html">About</a></li>
-      <li><a href="Projects.html">Projects</a></li>
-      <li><a href="Contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+  <div class="wrapper"> <!-- MAIN CONTENT WRAPPER -->
 
-<script>
-  function toggleMenu() {
-    const navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('show');
-  }
-</script>
+    <header>
+      <nav class="nav-container">
+        <a href="../index.html" class="nav-logo">
+          <img src="../images/profile-pic.jpeg" alt="Jalen Broxie" />
+        </a>
+        <div class="hamburger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="Resume.html">Resume</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
+    <main class="projects-main">
+      <h1 class="page-title">Projects</h1>
 
+      <!-- Project: Free Throw -->
+      <section class="project-row">
+        <div class="project-image">
+          <img src="../images/featured-project-thumbnail.jpeg" alt="Free Throw Simulation" />
+        </div>
+        <div class="project-info">
+          <h2>Free Throw Simulation</h2>
+          <p>Analyzed shot probabilities and player performance using simulations to model free throw success. Explored impact of player consistency under pressure.</p>
+          <div class="project-btn-container">
+            <a href="#" class="project-btn">View Project</a>
+          </div>
+        </div>
+      </section>
 
-<main class="projects-main">
-  <h1 class="page-title">Projects</h1>
+      <!-- Project: Quarterback Stats -->
+      <section class="project-row">
+        <div class="project-image">
+          <img src="../images/qbStat.jpeg" alt="Quarterback Stats" />
+        </div>
+        <div class="project-info">
+          <h2>Quarterback Stats Analysis</h2>
+          <p>Built visualizations to compare quarterback performance based on completion rate, passing yards, and game outcomes over time.</p>
+          <div class="project-btn-container">
+            <a href="../Merged_Final_Project.html" target="_blank" class="project-btn">View Project</a>
+          </div>
+        </div>
+      </section>
 
-  <!-- Project: Free Throw -->
-  <section class="project-row">
-    <div class="project-image">
-      <img src="../images/featured-project-thumbnail.jpeg" alt="Free Throw Simulation" />
-    </div>
-    <div class="project-info">
-      <h2>Free Throw Simulation</h2>
-      <p>Analyzed shot probabilities and player performance using simulations to model free throw success. Explored impact of player consistency under pressure.</p>
-      <div class="project-btn-container">
-        <a href="#" class="project-btn">View Project</a>
-      </div>
-    </div>
-  </section>
+      <!-- Project: COVID and Primary Enrollment -->
+      <section class="project-row">
+        <div class="project-image">
+          <img src="../images/enrollment.jpeg" alt="Primary Enrollment and COVID" />
+        </div>
+        <div class="project-info">
+          <h2>COVID's Impact on Primary School Enrollment</h2>
+          <p>Used international education datasets to evaluate how COVID-19 affected enrollment rates in low- and middle-income countries from 2019 to 2022.</p>
+          <div class="project-btn-container">
+            <a href="https://github.com/Jalen137/COVID-s-Impact-on-Primary-School-Enrollment" target="_blank" class="project-btn">View Project</a>
+          </div>
+        </div>
+      </section>
 
-  <!-- Project: Quarterback Stats -->
-  <section class="project-row">
-    <div class="project-image">
-      <img src="../images/qbStat.jpeg" alt="Quarterback Stats" />
-    </div>
-    <div class="project-info">
-      <h2>Quarterback Stats Analysis</h2>
-      <p>Built visualizations to compare quarterback performance based on completion rate, passing yards, and game outcomes over time.</p>
-      <div class="project-btn-container">
-        <a href="../Merged_Final_Project.html"  target="_blank" class="project-btn">View Project</a>
-      </div>
-    </div>
-  </section>
+      <!-- Project: Suicide Prevention -->
+      <section class="project-row">
+        <div class="project-image">
+          <img src="../images/suicide.jpeg" alt="Suicide Prevention Data" />
+        </div>
+        <div class="project-info">
+          <h2>Suicide Prevention and Awareness</h2>
+          <p>Created visual stories from suicide rate datasets to highlight disparities across gender, regions, and time. Aimed to promote awareness and policy insights.</p>
+          <div class="project-btn-container">
+            <a href="../JBFinal.pptx" class="project-btn">View Project</a>
+          </div>
+        </div>
+      </section>
+    </main>
 
-  <!-- Project: COVID and Primary Enrollment -->
-  <section class="project-row">
-    <div class="project-image">
-      <img src="../images/enrollment.jpeg" alt="Primary Enrollment and COVID" />
-    </div>
-    <div class="project-info">
-      <h2>COVID's Impact on Primary School Enrollment</h2>
-      <p>Used international education datasets to evaluate how COVID-19 affected enrollment rates in low- and middle-income countries from 2019 to 2022.</p>
-      <div class="project-btn-container">
-        <a href="https://github.com/Jalen137/COVID-s-Impact-on-Primary-School-Enrollment" target="_blank" class="project-btn">View Project</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Project: Suicide Prevention -->
-  <section class="project-row">
-    <div class="project-image">
-      <img src="../images/suicide.jpeg" alt="Suicide Prevention Data" />
-    </div>
-    <div class="project-info">
-      <h2>Suicide Prevention and Awareness</h2>
-      <p>Created visual stories from suicide rate datasets to highlight disparities across gender, regions, and time. Aimed to promote awareness and policy insights.</p>
-      <div class="project-btn-container">
-        <a href="../JBFinal.pptx" class="project-btn">View Project</a>
-      </div>
-    </div>
-  </section>
-</main>
+  </div> <!-- End .wrapper -->
 
   <footer>
     <div class="footer-container">
@@ -118,5 +113,12 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('show');
+    }
+  </script>
 </body>
 </html>

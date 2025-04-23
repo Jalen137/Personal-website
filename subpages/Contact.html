@@ -7,38 +7,33 @@
   <link rel="stylesheet" href="styleContact.css" />
 </head>
 <body>
- <header>
-  <nav class="nav-container">
-    <a href="../index.html" class="nav-logo">
-      <img src="../images/profile-pic.jpeg" alt="Jalen Broxie" />
-    </a>
-    <div class="hamburger" onclick="toggleMenu()">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <ul class="nav-links">
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="Resume.html">Resume</a></li>
-      <li><a href="About.html">About</a></li>
-      <li><a href="Projects.html">Projects</a></li>
-      <li><a href="Contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+  <div class="wrapper"> <!-- MAIN CONTENT WRAPPER -->
 
-<script>
-  function toggleMenu() {
-    const navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('show');
-  }
-</script>
+    <header>
+      <nav class="nav-container">
+        <a href="../index.html" class="nav-logo">
+          <img src="../images/profile-pic.jpeg" alt="Jalen Broxie" />
+        </a>
+        <div class="hamburger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="Resume.html">Resume</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <main class="contact-main">
-    <h1 class="page-title">Contact Me</h1>
+    <main class="contact-main">
+      <h1 class="page-title">Contact Me</h1>
 
-    <section class="contact-container">
-      <form class="contact-form" action="https://formspree.io/f/mdkgogjl" method="POST">
+      <section class="contact-container">
+        <form class="contact-form" action="https://formspree.io/f/mdkgogjl" method="POST">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" required />
 
@@ -51,20 +46,21 @@
           <button type="submit">Send Message</button>
         </form>
 
-
-      <div class="contact-info">
-        <h2>Let's Connect</h2>
-        <p>If you want to collaborate, hire me, or just say hi — drop me a message or reach out through any of my links below.</p>
-        <div class="footer-icons">
-          <a href="mailto:broxiejm@washjeff.edu" target="_blank"><img src="../images/email-icon.png" alt="Email" /></a>
-          <a href="tel:+14127160088" target="_blank"><img src="../images/phone-icon.png" alt="Phone" /></a>
-          <a href="https://www.linkedin.com/in/jalen-broxie-275b85324/" target="_blank"><img src="../images/linkedin-icon.png" alt="LinkedIn" /></a>
-          <a href="https://app.joinhandshake.com/profiles/r3sz2t" target="_blank"><img src="../images/handshake-icon.png" alt="Handshake" /></a>
-          <a href="https://github.com/Jalen137" target="_blank"><img src="../images/github-icon.png" alt="GitHub" /></a>
+        <div class="contact-info">
+          <h2>Let's Connect</h2>
+          <p>If you want to collaborate, hire me, or just say hi — drop me a message or reach out through any of my links below.</p>
+          <div class="footer-icons">
+            <a href="mailto:broxiejm@washjeff.edu" target="_blank"><img src="../images/email-icon.png" alt="Email" /></a>
+            <a href="tel:+14127160088" target="_blank"><img src="../images/phone-icon.png" alt="Phone" /></a>
+            <a href="https://www.linkedin.com/in/jalen-broxie-275b85324/" target="_blank"><img src="../images/linkedin-icon.png" alt="LinkedIn" /></a>
+            <a href="https://app.joinhandshake.com/profiles/r3sz2t" target="_blank"><img src="../images/handshake-icon.png" alt="Handshake" /></a>
+            <a href="https://github.com/Jalen137" target="_blank"><img src="../images/github-icon.png" alt="GitHub" /></a>
+          </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
+
+  </div> <!-- END .wrapper -->
 
   <footer>
     <div class="footer-container">
@@ -78,5 +74,12 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('show');
+    }
+  </script>
 </body>
 </html>

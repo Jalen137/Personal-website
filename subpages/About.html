@@ -7,56 +7,50 @@
   <link rel="stylesheet" href="styleAbout.css" />
 </head>
 <body>
-  <header>
-  <nav class="nav-container">
-    <a href="../index.html" class="nav-logo">
-      <img src="../images/profile-pic.jpeg" alt="Jalen Broxie" />
-    </a>
-    <div class="hamburger" onclick="toggleMenu()">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <ul class="nav-links">
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="Resume.html">Resume</a></li>
-      <li><a href="About.html">About</a></li>
-      <li><a href="Projects.html">Projects</a></li>
-      <li><a href="Contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+  <div class="wrapper"> <!-- WRAPS ALL MAIN CONTENT EXCEPT FOOTER -->
+    <header>
+      <nav class="nav-container">
+        <a href="../index.html" class="nav-logo">
+          <img src="../images/profile-pic.jpeg" alt="Jalen Broxie" />
+        </a>
+        <div class="hamburger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="Resume.html">Resume</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<script>
-  function toggleMenu() {
-    const navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('show');
-  }
-</script>
+    <main class="about-main">
+      <h1 class="page-title">About Me</h1>
 
+      <section class="about-section">
+        <img src="../images/football-pic.jpeg" alt="Jalen Broxie" class="about-photo" />
+        <div class="about-text">
+          <p>I'm Jalen Broxie, a Data Science student at Washington & Jefferson College with a minor in Economics. I'm driven by curiosity and a passion for solving real-world problems with data. Whether it’s through simulations, statistical analysis, or collaborative team projects, I’m all about making insights actionable.</p>
+          <p>Outside the classroom, you’ll probably find me playing football, working on side projects, working out, or diving into sports analytics. I'm always looking to grow, learn, and contribute wherever I can.</p>
+        </div>
+      </section>
 
-  <main class="about-main">
-    <h1 class="page-title">About Me</h1>
-
-    <section class="about-section">
-      <img src="../images/football-pic.jpeg" alt="Jalen Broxie" class="about-photo" />
-      <div class="about-text">
-        <p>I'm Jalen Broxie, a Data Science student at Washington & Jefferson College with a minor in Economics. I'm driven by curiosity and a passion for solving real-world problems with data. Whether it’s through simulations, statistical analysis, or collaborative team projects, I’m all about making insights actionable.</p>
-        <p>Outside the classroom, you’ll probably find me playing football, working on side projects, working out, or diving into sports analytics. I'm always looking to grow, learn, and contribute wherever I can.</p>
-      </div>
-    </section>
-
-    <section class="interests-section">
-      <h2>What I'm Into</h2>
-      <div class="interests-cards">
-        <div class="interest-card">📊 Data Analysis</div>
-        <div class="interest-card">🏈 Coaching & Sports</div>
-        <div class="interest-card">💻 Building Projects</div>
-        <div class="interest-card">💡 Exploring Tech & AI</div>
-        <div class="interest-card">🌱 Wellness & Mental Health</div>
-      </div>
-    </section>
-  </main>
+      <section class="interests-section">
+        <h2>What I'm Into</h2>
+        <div class="interests-cards">
+          <div class="interest-card">📊 Data Analysis</div>
+          <div class="interest-card">🏈 Coaching & Sports</div>
+          <div class="interest-card">💻 Building Projects</div>
+          <div class="interest-card">💡 Exploring Tech & AI</div>
+          <div class="interest-card">🌱 Wellness & Mental Health</div>
+        </div>
+      </section>
+    </main>
+  </div> <!-- END .wrapper -->
 
   <footer>
     <div class="footer-container">
@@ -80,6 +74,12 @@
       </div>
     </div>
   </footer>
- 
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('show');
+    }
+  </script>
 </body>
 </html>
