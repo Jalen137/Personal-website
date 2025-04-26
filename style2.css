@@ -259,6 +259,8 @@ footer {
   filter: brightness(110%);
 }
 
+
+
 /* Responsive Fixes */
 @media (max-width: 768px) {
   .nav-container {

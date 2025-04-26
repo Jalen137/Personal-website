@@ -143,10 +143,6 @@ header {
   transition: transform 0.3s ease;
 }
 
-.about-photo:hover {
-  transform: scale(1.03);
-}
-
 
 .about-text {
   flex: 1;
@@ -233,6 +229,54 @@ footer {
 .footer-icons a:hover img {
   transform: scale(1.2);
   filter: brightness(110%);
+}
+
+/* === Favorites Section === */
+.favorites-section {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.favorites-section h2 {
+  font-size: 1.8rem;
+  color: #800000;
+  margin: 2rem 0 1rem;
+  padding-top: 2rem; /* <--- Add some breathing space above */
+  border-top: 2px solid #ccc; /* <--- Light gray line to separate nicely */
+}
+
+
+.favorites-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.favorite-item {
+  background-color: #fff;
+  border: 2px solid #800000;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 180px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+
+.favorite-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.favorite-item p {
+  margin-top: 0.8rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
 }
 
 @media (max-width: 768px) {
@@ -362,5 +406,13 @@ footer {
   .footer-icons img {
     width: 36px;
     height: 36px;
+  }
+   .favorites-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .favorite-item {
+    width: 80%;
   }
 }
