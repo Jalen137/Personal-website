@@ -4,10 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jalen Broxie | Resume</title>
+  <!-- If styleResume.css lives in /subpages keep this path.
+       If it is at the repo root, change to ../styleResume.css -->
   <link rel="stylesheet" href="styleResume.css" />
 </head>
 <body>
-  <div class="wrapper"> <!-- 👈 Wrap content to manage footer spacing -->
+  <div class="wrapper">
 
     <header>
       <nav class="nav-container">
@@ -31,71 +33,119 @@
 
     <main class="resume-main">
       <h1 class="page-title">My Resume</h1>
-      <a href="../JalenBroxieResume.pdf" class="btn-download" target="_blank">Download Full PDF</a>
+      <!-- Make sure the PDF is at repo root. If you rename it, update this link. -->
+      <a href="../JalenBroxieResume.pdf" class="btn-download" target="_blank" rel="noopener">Download Full PDF</a>
 
       <div class="resume-grid">
+        <!-- EDUCATION -->
         <section class="resume-card">
           <h2>Education</h2>
-          <p><strong>Washington & Jefferson College</strong><br>
-          Computing & Information Studies (Data Science) | Economics Minor<br>
-          GPA: 3.6 | Grad: May 2026</p>
+          <p><strong>Washington &amp; Jefferson College</strong> — Washington, PA</p>
+          <p>Major: Computing and Information Studies (Data Science)<br />
+             Minor: Economics<br />
+             GPA: 3.6 — Graduation: May 2026
+          </p>
+          <p><strong>Relevant Coursework:</strong> Intro to Data Science, Advanced Data Analysis: Simulations, Statistics, Database Concepts, Economics, Object-Oriented Programming, Calculus, Business Analytics</p>
           <ul>
-            <li>Dean’s List, Presidential Scholarship</li>
-            <li>Charles West & Col. Naughton Scholarships</li>
-            <li>Fellows Program Invitee</li>
+            <li>Dean’s List</li>
+            <li>Presidential Scholarship</li>
+            <li>Charles West Scholarship</li>
+            <li>Col. John Naughton Scholarship</li>
+            <li>Invited to Fellows Program</li>
           </ul>
         </section>
 
+        <!-- EXPERIENCE -->
         <section class="resume-card">
           <h2>Experience</h2>
-          <p><strong>Walmart – Associate (Summer 2024)</strong></p>
+
+          <p><strong>Haemonetics — Machine Operator</strong> | Pittsburgh, PA<br />
+          May 2025 - August 2025</p>
           <ul>
-            <li>Led store remodels, coordinated with teams & contractors</li>
-            <li>Problem-solved during active layout projects</li>
+            <li>Operated clean room production equipment and performed quality control checks.</li>
+            <li>Recorded production data and test results in digital logs.</li>
+            <li>Worked with teammates to keep a safe and efficient environment.</li>
           </ul>
 
-          <p><strong>Jersey Mike’s – Shift Leader (2021–2023)</strong></p>
+          <p><strong>Walmart — Associate</strong> | Coraopolis, PA<br />
+          May 2024 - August 2024</p>
           <ul>
-            <li>Trained 10+ employees, managed cash, led shifts</li>
-            <li>Improved operations and customer service</li>
+            <li>Worked on store remodel projects with cross functional teams.</li>
+            <li>Supported remodel workflows and basic IT related updates.</li>
           </ul>
         </section>
       </div>
 
+      <!-- PROJECTS / ACADEMIC WORK -->
       <section class="resume-card full">
-        <h2>Leadership & Activities</h2>
+        <h2>Technical & Academic Projects</h2>
         <ul>
-          <li><strong>Coach:</strong> Moon Area Football – Defensive Backs (2021–2023)</li>
-          <li><strong>Team Member:</strong> W&J Football (2022–Present)</li>
+          <li><strong>Predictive Sports Betting Model (Python, XGBoost):</strong> built a model to predict outcomes and evaluate performance.</li>
+          <li><strong>Excel Dashboards:</strong> investment decision residual rate calculator, probability to cashflows casino simulation, and a schedule tool with conflict flags and charts.</li>
+          <li><strong>Personal Website:</strong> designed and shipped a portfolio with HTML, CSS, and GitHub Pages.</li>
+          <li><strong>Dashboards with Tableau and SQL:</strong> explored links between financial and demographic variables and built visuals for quick insight.</li>
         </ul>
       </section>
 
+      <!-- LEADERSHIP -->
+      <section class="resume-card full">
+        <h2>Leadership & Activities</h2>
+        <ul>
+          <li><strong>W&amp;J Football Team — Student Athlete</strong> | Aug 2022 - Present
+            <ul>
+              <li>Balanced academics and athletics while building teamwork and time management.</li>
+              <li>Supported defensive schemes and stayed focused under pressure.</li>
+            </ul>
+          </li>
+          <li><strong>Moon Area Football — Assistant Coach</strong> | 2021 - 2023
+            <ul>
+              <li>Planned and ran defensive drills and mentored players.</li>
+              <li>Built communication and leadership through daily coaching work.</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <!-- SKILLS -->
       <section class="skills-highlight">
         <h2>Skills & Interests</h2>
-        <p><strong>Skills:</strong> Python, Java, SQL, Tableau, Excel, PowerPoint, Adobe Photoshop</p>
-        <p><strong>Interests:</strong> Data analysis, sports, coaching, wellness, healthcare, side projects</p>
+        <p><strong>Technical:</strong> Python, SQL, Java, Excel, Tableau, HTML, CSS, GitHub, basic machine learning, business analytics</p>
+        <p><strong>Analytical:</strong> data analysis, statistical modeling, regression, hypothesis testing, database management, basic cloud environments</p>
+        <p><strong>Professional:</strong> presentation design, data visualization, technical writing, documentation, project coordination, dashboards</p>
+        <p><strong>Interests:</strong> data analysis, sports, healthcare, fitness and wellness, personal projects, gaming, coaching</p>
+      </section>
+
+      <!-- LINKS -->
+      <section class="resume-card full">
+        <h2>Links</h2>
+        <ul>
+          <li><a href="mailto:broxiejm@washjeff.edu">broxiejm@washjeff.edu</a></li>
+          <li><a href="https://www.linkedin.com/in/jalen-broxie-275b85324/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://jalen137.github.io/Personal-website/" target="_blank" rel="noopener">Portfolio Website</a></li>
+          <li><a href="https://github.com/Jalen137" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
       </section>
     </main>
 
-  </div> <!-- End .wrapper -->
+  </div>
 
   <footer>
     <div class="footer-container">
       <p>© 2025 Jalen Broxie</p>
       <div class="footer-icons">
-        <a href="mailto:broxiejm@washjeff.edu" target="_blank">
+        <a href="mailto:broxiejm@washjeff.edu" target="_blank" rel="noopener">
           <img src="../images/email-icon.png" alt="Email" />
         </a>
-        <a href="tel:+14127160088" target="_blank">
+        <a href="tel:+14127160088" target="_blank" rel="noopener">
           <img src="../images/phone-icon.png" alt="Phone" />
         </a>
-        <a href="https://www.linkedin.com/in/jalen-broxie-275b85324/" target="_blank">
+        <a href="https://www.linkedin.com/in/jalen-broxie-275b85324/" target="_blank" rel="noopener">
           <img src="../images/linkedin-icon.png" alt="LinkedIn" />
         </a>
-        <a href="https://app.joinhandshake.com/profiles/r3sz2t" target="_blank">
+        <a href="https://app.joinhandshake.com/profiles/r3sz2t" target="_blank" rel="noopener">
           <img src="../images/handshake-icon.png" alt="Handshake" />
         </a>
-        <a href="https://github.com/Jalen137" target="_blank">
+        <a href="https://github.com/Jalen137" target="_blank" rel="noopener">
           <img src="../images/github-icon.png" alt="GitHub" />
         </a>
       </div>
